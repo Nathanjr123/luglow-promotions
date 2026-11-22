@@ -7,140 +7,99 @@
 <meta name="description" content="Full-service marketing and brand activation agency operating across South Africa. Influencer management, digital marketing, promotional staffing and events.">
 <!-- Prototype: remove the next line when the client approves and the site goes live. -->
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#07261e">
+<meta name="theme-color" content="#061713">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Luglow Promotions">
 <meta property="og:description" content="Bringing brands to life across South Africa. Brand activations, influencer management, digital marketing and promotional staffing.">
 <meta property="og:url" content="https://nathanjr123.github.io/luglow-promotions/">
-<meta property="og:image" content="https://nathanjr123.github.io/luglow-promotions/og.png">
+<meta property="og:image" content="https://nathanjr123.github.io/luglow-promotions/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/anybody.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<header class="top" id="top">
+<header class="top">
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="Luglow Promotions, home">LUGL<i></i>W</a>
+    <a class="logo" href="#main" aria-label="Luglow Promotions, home">LUGL<i></i>W<small>Promotions</small></a>
     <nav id="nav" aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#experience">Experience</a>
+      <div class="has-drop">
+        <button type="button" class="dropbtn" aria-expanded="false" aria-controls="drop">Services</button>
+        <div class="drop" id="drop"><div><p>Digital and influencer</p><a href="#services" data-dialog="svc-influencer">Influencer marketing &amp; management</a><a href="#services" data-dialog="svc-digital">Digital marketing</a><a href="#services" data-dialog="svc-social">Social media management</a></div><div><p>Activations and promotions</p><a href="#services" data-dialog="svc-activations">Brand activations</a><a href="#services" data-dialog="svc-experiential">Experiential marketing</a><a href="#services" data-dialog="svc-sampling">Product sampling &amp; in-store promotions</a><a href="#services" data-dialog="svc-flyers">Flyer distribution &amp; promotional campaigns</a></div><div><p>People, events and partnerships</p><a href="#services" data-dialog="svc-staffing">Promotional staffing &amp; brand ambassadors</a><a href="#services" data-dialog="svc-events">Event marketing &amp; management</a><a href="#services" data-dialog="svc-partnerships">Brand partnerships &amp; collaborations</a></div></div>
+      </div>
+      <a href="#services" class="m-only">All services</a>
+      <a href="#work">Our work</a>
       <a href="#reach">Reach</a>
-      <a href="#portfolio">Portfolio</a>
-      <a class="btn small" href="#contact">Get a quote</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <a class="btn small quote" href="#contact">Get a quote</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><i></i><i></i></button>
   </div>
 </header>
 
 <main id="main">
 <section class="hero">
-  <canvas id="spark" aria-hidden="true"></canvas>
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <h1>Marketing that moves brands forward.</h1>
-      <p class="lead">Luglow Promotions is a full-service marketing and brand activation agency operating across South Africa. We create experiences, build connections and drive engagement.</p>
-      <div class="actions">
-        <a class="btn" href="#contact">Get a quote</a>
-        <a class="btn line" href="#services">See our services</a>
-      </div>
-    </div>
-    <div class="stage">
-      <div class="try">
-        <label for="brandInput">Put your brand on the label</label>
-        <input id="brandInput" type="text" maxlength="22" placeholder="Type your brand name" autocomplete="off" spellcheck="false">
-      </div>
-    </div>
+  <div class="slides" id="slides">
+    <div class="slide on"><picture><source type="image/avif" srcset="img/castle-team-480.avif 480w, img/castle-team-828.avif 828w" sizes="(max-width:860px) 170vw, 62vw"><img src="img/castle-team.webp" width="828" height="678" alt="Two brand ambassadors in Castle Double Malt dresses holding a branded bucket in a liquor warehouse" fetchpriority="high"></picture></div>
+    <div class="slide" aria-hidden="true"><picture><source type="image/avif" srcset="img/vaseline-in-store-480.avif 480w, img/vaseline-in-store-740.avif 740w, img/vaseline-in-store-1000.avif 1000w" sizes="(max-width:860px) 100vw, 62vw"><img src="img/vaseline-in-store.webp" width="1000" height="1333" alt="A smiling promoter in a Vaseline uniform beside a giant Vaseline jar display in a store" loading="lazy"></picture></div>
+    <div class="slide" aria-hidden="true"><picture><source type="image/avif" srcset="img/flyer-team-400.avif 400w, img/flyer-team-700.avif 700w, img/flyer-team-920.avif 920w" sizes="(max-width:860px) 170vw, 62vw"><img src="img/flyer-team.webp" width="920" height="726" alt="Four promoters holding stacks of retail deals flyers outside a shopping centre" loading="lazy"></picture></div>
+  </div>
+  <div class="wrap hero-copy">
+    <h1>Marketing that moves <em>brands forward.</em></h1>
+    <p>Luglow Promotions is a full-service marketing and brand activation agency operating across South Africa. We create experiences, build connections and drive engagement.</p>
+    <div class="actions"><a class="btn" href="#contact">Get a quote</a><a class="btn line" href="#services">Our services</a></div>
+  </div>
+  <div class="dots"><button type="button" class="pause" aria-label="Pause slideshow"></button><button type="button" data-i="0" aria-label="Photo 1" aria-current="true"></button><button type="button" data-i="1" aria-label="Photo 2"></button><button type="button" data-i="2" aria-label="Photo 3"></button></div>
+</section>
+
+<div class="trust"><div class="wrap"><p>Brand activation experience</p><ul><li>Jägermeister</li><li>Castle Double Malt</li><li>Devil’s Peak</li></ul></div></div>
+
+<section class="white" id="services">
+  <div class="wrap">
+    <div class="head"><h2>Ten ways to get your brand noticed</h2><p>Book one service or combine several into a complete campaign. Tap any service for details.</p></div>
+    <div class="filters" role="group" aria-label="Filter services"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="digital" aria-pressed="false">Digital</button><button type="button" data-f="field" aria-pressed="false">Activations</button><button type="button" data-f="people" aria-pressed="false">People and events</button></div>
+    <ul class="bento" id="bento">
+        <li data-g="people" class="card photo"><button type="button" data-dialog="svc-staffing"><picture><source type="image/avif" srcset="img/castle-double-malt-420.avif 420w, img/castle-double-malt-635.avif 635w" sizes="(max-width:700px) 46vw, (max-width:1100px) 31vw, 290px"><img src="img/castle-double-malt.webp" width="635" height="795" alt="" loading="lazy"></picture><span class="name">Promotional staffing &amp; brand ambassadors</span><span class="more">View service</span></button></li>
+        <li data-g="digital" class="card"><button type="button" data-dialog="svc-influencer"><span class="name">Influencer marketing &amp; management</span><span class="more">View service</span></button></li>
+        <li data-g="field" class="card photo"><button type="button" data-dialog="svc-activations"><picture><source type="image/avif" srcset="img/jagermeister-420.avif 420w, img/jagermeister-599.avif 599w" sizes="(max-width:700px) 46vw, (max-width:1100px) 31vw, 290px"><img src="img/jagermeister.webp" width="599" height="770" alt="" loading="lazy"></picture><span class="name">Brand activations</span><span class="more">View service</span></button></li>
+        <li data-g="digital" class="card"><button type="button" data-dialog="svc-digital"><span class="name">Digital marketing</span><span class="more">View service</span></button></li>
+        <li data-g="digital" class="card"><button type="button" data-dialog="svc-social"><span class="name">Social media management</span><span class="more">View service</span></button></li>
+        <li data-g="people" class="card"><button type="button" data-dialog="svc-events"><span class="name">Event marketing &amp; management</span><span class="more">View service</span></button></li>
+        <li data-g="field" class="card photo"><button type="button" data-dialog="svc-sampling"><picture><source type="image/avif" srcset="img/vaseline-in-store-480.avif 480w, img/vaseline-in-store-740.avif 740w, img/vaseline-in-store-1000.avif 1000w" sizes="(max-width:700px) 46vw, (max-width:1100px) 31vw, 290px"><img src="img/vaseline-in-store.webp" width="1000" height="1333" alt="" loading="lazy"></picture><span class="name">Product sampling &amp; in-store promotions</span><span class="more">View service</span></button></li>
+        <li data-g="field" class="card photo"><button type="button" data-dialog="svc-flyers"><picture><source type="image/avif" srcset="img/flyer-team-400.avif 400w, img/flyer-team-700.avif 700w, img/flyer-team-920.avif 920w" sizes="(max-width:700px) 46vw, (max-width:1100px) 31vw, 290px"><img src="img/flyer-team.webp" width="920" height="726" alt="" loading="lazy"></picture><span class="name">Flyer distribution &amp; promotional campaigns</span><span class="more">View service</span></button></li>
+        <li data-g="field" class="card"><button type="button" data-dialog="svc-experiential"><span class="name">Experiential marketing</span><span class="more">View service</span></button></li>
+        <li data-g="people" class="card"><button type="button" data-dialog="svc-partnerships"><span class="name">Brand partnerships &amp; collaborations</span><span class="more">View service</span></button></li>
+        <li class="card wide cta"><a href="#contact" data-service="Complete campaign"><span class="name">Need a complete campaign?</span><span class="more">Tell us about it</span></a></li>
+    </ul>
   </div>
 </section>
 
-<div class="strip">
-  <ul class="wrap">
-    <li>Full-service marketing</li><li>Brand activations</li><li>Influencer management</li><li>Digital marketing</li>
-  </ul>
-</div>
-
-<section class="light" id="about">
+<section class="dark" id="work">
   <div class="wrap">
-    <h2 class="sr">About us</h2>
-    <p class="statement">We work at the intersection of creativity, marketing and consumer engagement, helping brands communicate their identity, reach new audiences and build lasting connections.</p>
-    <div class="about-grid">
-      <div class="prose">
-        <h3>Who we are</h3>
-        <p>Luglow Promotions is a South African marketing agency providing integrated marketing, promotional and brand development solutions to businesses, established brands and organisations.</p>
-        <p>Our services cover influencer management, digital marketing, social media management, brand activations, experiential marketing, promotional staffing and event marketing.</p>
-        <p>With experience across beverage brands, nightlife promotions, retail activations and influencer collaborations, we understand the importance of strategic thinking, professional execution and effective brand representation.</p>
-      </div>
-      <div class="prose">
-        <h3>Our mission</h3>
-        <p>To empower brands through innovative marketing strategies, creative campaigns and meaningful consumer experiences that deliver value and strengthen brand presence.</p>
-        <h3>Our vision</h3>
-        <p>To become a recognised and trusted marketing agency in South Africa, known for creativity, excellence, strategic thinking and delivering impactful brand experiences.</p>
-      </div>
-      <div>
-        <h3>Our values</h3>
-        <ul class="values">
-          <li>Creativity and innovation</li><li>Professionalism</li><li>Integrity and transparency</li><li>Collaboration and teamwork</li><li>Reliability and accountability</li><li>Client satisfaction</li><li>Excellence in execution</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="pale" id="services">
-  <div class="wrap">
-    <div class="head">
-      <h2>Our services</h2>
-      <p>Book one service or combine them into a complete campaign. Open any service to see what it covers.</p>
-    </div>
-    <div id="serviceList"></div>
-  </div>
-</section>
-
-<section class="amber" id="experience">
-  <div class="wrap">
-    <div class="head">
-      <h2>Delivering brand experiences</h2>
-      <p>Our previous brand activation experience includes:</p>
-    </div>
+    <div class="head"><h2>Our work. <em>Our impact.</em></h2><p>The creativity, coordination and execution behind the campaigns we support.</p></div>
     <div class="brands">
-      <figure><img src="img/jagermeister.webp" alt="Two promoters in green Jägermeister uniforms at a branded outdoor bar" loading="lazy"><figcaption>Jägermeister</figcaption></figure>
-      <figure><img src="img/castle-double-malt.webp" alt="A brand ambassador in a green dress holding a Castle Double Malt bucket beside a customer" loading="lazy"><figcaption>Castle Double Malt</figcaption></figure>
-      <figure><img src="img/devils-peak.webp" alt="A brand ambassador on a golf course holding a six-pack of Devil’s Peak Lite" loading="lazy"><figcaption>Devil’s Peak</figcaption></figure>
+      <figure class=""><button type="button" data-shot="jagermeister" aria-label="Enlarge photo: Jägermeister"><picture><source type="image/avif" srcset="img/jagermeister-420.avif 420w, img/jagermeister-599.avif 599w" sizes="(max-width:700px) 78vw, (max-width:1280px) 30vw, 375px"><img src="img/jagermeister.webp" width="599" height="770" alt="Two promoters in green Jägermeister uniforms at a branded outdoor bar" loading="lazy"></picture></button><figcaption>Jägermeister</figcaption></figure>
+      <figure class=""><button type="button" data-shot="castle-team" aria-label="Enlarge photo: Castle Double Malt"><picture><source type="image/avif" srcset="img/castle-team-480.avif 480w, img/castle-team-828.avif 828w" sizes="(max-width:700px) 120vw, (max-width:1280px) 47vw, 580px"><img src="img/castle-team.webp" width="828" height="678" alt="Two brand ambassadors in Castle Double Malt dresses holding a branded bucket in a liquor warehouse" loading="lazy"></picture></button><figcaption>Castle Double Malt</figcaption></figure>
+      <figure class=""><button type="button" data-shot="devils-peak" aria-label="Enlarge photo: Devil’s Peak"><picture><source type="image/avif" srcset="img/devils-peak-480.avif 480w, img/devils-peak-758.avif 758w" sizes="(max-width:700px) 94vw, (max-width:1280px) 36vw, 450px"><img src="img/devils-peak.webp" width="758" height="794" alt="A brand ambassador on a golf course holding a six-pack of Devil’s Peak Lite" loading="lazy"></picture></button><figcaption>Devil’s Peak</figcaption></figure>
     </div>
-    <div class="exp">
-      <ul>
-        <li>Nightlife and club activations</li><li>Bottle service promotions</li><li>In-store product tastings</li><li>Outdoor promotional campaigns</li><li>Brand ambassador staffing</li><li>Consumer engagement initiatives</li>
-      </ul>
-      <p>We understand the importance of brand identity, campaign objectives and maintaining professional standards throughout every activation.</p>
+    <ul class="chips"><li>Nightlife and club activations</li><li>Bottle service promotions</li><li>In-store product tastings</li><li>Outdoor promotional campaigns</li><li>Brand ambassador staffing</li><li>Consumer engagement initiatives</li></ul>
+    <div class="gallery">
+      <figure class=""><button type="button" data-shot="vaseline-in-store" aria-label="Enlarge photo: Vaseline in-store promotion"><picture><source type="image/avif" srcset="img/vaseline-in-store-480.avif 480w, img/vaseline-in-store-740.avif 740w, img/vaseline-in-store-1000.avif 1000w" sizes="(max-width:700px) 46vw, (max-width:1280px) 23vw, 280px"><img src="img/vaseline-in-store.webp" width="1000" height="1333" alt="A smiling promoter in a Vaseline uniform beside a giant Vaseline jar display in a store" loading="lazy"></picture></button><figcaption>Vaseline in-store promotion</figcaption></figure>
+      <figure class=""><button type="button" data-shot="street-team" aria-label="Enlarge photo: Street promotion team"><picture><source type="image/avif" srcset="img/street-team-400.avif 400w, img/street-team-700.avif 700w, img/street-team-868.avif 868w" sizes="(max-width:700px) 46vw, (max-width:1280px) 23vw, 280px"><img src="img/street-team.webp" width="868" height="1156" alt="Four promoters in matching branded T-shirts holding flyers at a city intersection" loading="lazy"></picture></button><figcaption>Street promotion team</figcaption></figure>
+      <figure class=""><button type="button" data-shot="castle-double-malt" aria-label="Enlarge photo: Castle Double Malt promotion"><picture><source type="image/avif" srcset="img/castle-double-malt-420.avif 420w, img/castle-double-malt-635.avif 635w" sizes="(max-width:700px) 46vw, (max-width:1280px) 23vw, 280px"><img src="img/castle-double-malt.webp" width="635" height="795" alt="A brand ambassador in a green dress holding a Castle Double Malt bucket beside a customer" loading="lazy"></picture></button><figcaption>Castle Double Malt promotion</figcaption></figure>
+      <figure class=""><button type="button" data-shot="flyer-team" aria-label="Enlarge photo: Flyer distribution team"><picture><source type="image/avif" srcset="img/flyer-team-400.avif 400w, img/flyer-team-700.avif 700w, img/flyer-team-920.avif 920w" sizes="(max-width:700px) 78vw, (max-width:1280px) 39vw, 480px"><img src="img/flyer-team.webp" width="920" height="726" alt="Four promoters holding stacks of retail deals flyers outside a shopping centre" loading="lazy"></picture></button><figcaption>Flyer distribution team</figcaption></figure>
     </div>
+    <div class="actions"><a class="btn" href="https://www.instagram.com/luglowpromotions/" target="_blank" rel="noopener">More on Instagram</a><a class="btn line" href="#contact" data-service="Complete campaign">Request our portfolio</a></div>
   </div>
 </section>
 
-<section class="dark" id="reach">
-  <div class="wrap reach-grid">
-    <div>
-      <h2>Nationwide marketing solutions</h2>
-      <p>We coordinate promotional personnel and campaign support according to your requirements, campaign objectives and location.</p>
-      <p>Whether you need a single-city activation or a multi-location national campaign, we aim to deliver consistent, professional and effective execution.</p>
-      <h3>Who we work with</h3>
-      <ul class="who">
-        <li>Corporate organisations</li><li>Beverage and FMCG brands</li><li>Retail businesses</li><li>Event organisers</li><li>Marketing agencies</li><li>Small and growing businesses</li>
-      </ul>
-    </div>
-    <svg id="map" viewBox="-12 -12 602 528" role="img" aria-label="Map of South Africa, our nationwide service area"></svg>
-  </div>
-</section>
-
-<section class="light" id="why">
+<section class="soft" id="why">
   <div class="wrap">
-    <h2>Why choose Luglow Promotions</h2>
+    <div class="head"><h2>Why choose Luglow Promotions</h2></div>
     <dl class="why">
       <div><dt>Integrated marketing solutions</dt><dd>We bring different marketing disciplines together to provide clients with coordinated solutions.</dd></div>
       <div><dt>Nationwide coverage</dt><dd>We support marketing campaigns and promotional initiatives across South Africa.</dd></div>
@@ -152,32 +111,36 @@
   </div>
 </section>
 
-<section class="pale" id="portfolio">
-  <div class="wrap">
-    <div class="head">
-      <h2>Our work. Our impact.</h2>
-      <p>Our portfolio highlights the creativity, coordination and execution behind the campaigns we support.</p>
+<section class="dark" id="reach">
+  <div class="wrap reach-grid">
+    <div>
+      <h2>One city or <em>nationwide</em></h2>
+      <p>We coordinate promotional personnel and campaign support according to your requirements, campaign objectives and location. From a single-city activation to a multi-location national campaign, we aim to deliver consistent, professional and effective execution.</p>
+      <h3>Who we work with</h3>
+      <ul class="chips"><li>Corporate organisations</li><li>Beverage and FMCG brands</li><li>Retail businesses</li><li>Event organisers</li><li>Marketing agencies</li><li>Small and growing businesses</li></ul>
     </div>
-    <div class="folio">
-      <figure><img src="img/vaseline-in-store.webp" alt="A smiling promoter in a Vaseline uniform beside a giant Vaseline jar display in a store" loading="lazy"><figcaption>Vaseline in-store promotion</figcaption></figure>
-      <figure><img src="img/street-team.webp" alt="Four promoters in matching branded T-shirts holding flyers at a city intersection" loading="lazy"><figcaption>Street promotion team</figcaption></figure>
-      <div class="folio-end">
-        <figure><img src="img/flyer-team.webp" alt="Four promoters holding stacks of retail deals flyers outside a shopping centre" loading="lazy"><figcaption>Flyer distribution team</figcaption></figure>
-        <p>Marketing campaigns, influencer collaborations, promotional activations and brand experiences. For partnership opportunities and campaign enquiries, contact our team.</p>
-        <div class="actions">
-          <a class="btn ink" href="https://www.instagram.com/luglowpromotions/" target="_blank" rel="noopener">More on Instagram</a>
-          <a class="btn line-ink" href="#contact">Request our portfolio</a>
-        </div>
-      </div>
-    </div>
+    <svg id="map" viewBox="-12 -12 602 528" role="img" aria-label="Map of South Africa, our nationwide service area"></svg>
   </div>
 </section>
 
-<section class="dark contact" id="contact">
+<section class="white" id="about">
+  <div class="wrap">
+    <h2 class="statement">We work at the intersection of creativity, marketing and consumer engagement.</h2>
+    <div class="about">
+      <div><h3>Who we are</h3><p>Luglow Promotions is a South African marketing agency providing integrated marketing, promotional and brand development solutions to businesses, established brands and organisations.</p><p>With experience across beverage brands, nightlife promotions, retail activations and influencer collaborations, we understand the importance of strategic thinking, professional execution and effective brand representation.</p></div>
+      <div><h3>Our mission</h3><p>To empower brands through innovative marketing strategies, creative campaigns and meaningful consumer experiences that deliver value and strengthen brand presence.</p></div>
+      <div><h3>Our vision</h3><p>To become a recognised and trusted marketing agency in South Africa, known for creativity, excellence, strategic thinking and delivering impactful brand experiences.</p></div>
+    </div>
+    <h3>Our values</h3>
+    <ul class="chips light"><li>Creativity and innovation</li><li>Professionalism</li><li>Integrity and transparency</li><li>Collaboration and teamwork</li><li>Reliability and accountability</li><li>Client satisfaction</li><li>Excellence in execution</li></ul>
+  </div>
+</section>
+
+<section class="dark" id="contact">
   <div class="wrap contact-grid">
     <div>
-      <h2>Your next campaign starts here.</h2>
-      <p>Great marketing starts with understanding your brand and its audience. Tell us what you need, whether that is influencer management, digital marketing, promotional staffing, a brand activation or a complete campaign.</p>
+      <h2>Your next campaign <em>starts here.</em></h2>
+      <p>Great marketing starts with understanding your brand and its audience. Tell us what you need and let’s build something impactful together.</p>
       <dl class="details">
         <div><dt>Phone / WhatsApp</dt><dd><a href="tel:+27846972497">084 697 2497</a></dd></div>
         <div><dt>Email</dt><dd><a href="mailto:lupromotions9@gmail.com">lupromotions9@gmail.com</a></dd></div>
@@ -186,33 +149,92 @@
       </dl>
     </div>
     <form id="enquiry">
-      <div class="two">
-        <p><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></p>
-        <p><label for="f-brand">Brand or company</label><input id="f-brand" name="brand" autocomplete="organization"></p>
-      </div>
-      <div class="two">
-        <p><label for="f-service">Service</label><select id="f-service" name="service"><option>Complete campaign</option></select></p>
-        <p><label for="f-where">City and date</label><input id="f-where" name="where" placeholder="Durban, mid December"></p>
-      </div>
+      <div class="two"><p><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></p><p><label for="f-brand">Brand or company</label><input id="f-brand" name="brand" autocomplete="organization"></p></div>
+      <div class="two"><p><label for="f-service">Service</label><select id="f-service" name="service"><option>Complete campaign</option><option>Influencer marketing &amp; management</option><option>Digital marketing</option><option>Social media management</option><option>Brand activations</option><option>Experiential marketing</option><option>Product sampling &amp; in-store promotions</option><option>Flyer distribution &amp; promotional campaigns</option><option>Promotional staffing &amp; brand ambassadors</option><option>Event marketing &amp; management</option><option>Brand partnerships &amp; collaborations</option></select></p><p><label for="f-where">City and date</label><input id="f-where" name="where" placeholder="Durban, mid December"></p></div>
       <p><label for="f-msg">About your campaign</label><textarea id="f-msg" name="msg" rows="4" required></textarea></p>
-      <div class="actions">
-        <button class="btn" type="submit" value="wa">Send on WhatsApp</button>
-        <button class="btn line" type="submit" value="mail">Send by email</button>
-      </div>
+      <div class="actions"><button class="btn" type="submit" value="wa">Send on WhatsApp</button><button class="btn line" type="submit" value="mail">Send by email</button></div>
       <p class="note" id="formNote" role="status">Your message opens in WhatsApp or your email app, ready to send.</p>
     </form>
   </div>
 </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <a class="logo" href="#top" aria-label="Back to top">LUGL<i></i>W</a>
-    <p>Marketing. Creativity. Experiences.</p>
-    <p>© 2026 Luglow Promotions. All Rights Reserved.</p>
-  </div>
-</footer>
-<script src="map-data.js"></script>
-<script src="main.js"></script>
+<footer><div class="wrap"><a class="logo" href="#main" aria-label="Back to top">LUGL<i></i>W<small>Promotions</small></a><p>Marketing. Creativity. Experiences.</p><p>© 2026 Luglow Promotions. All Rights Reserved.</p></div></footer>
+
+<div class="dock"><a href="tel:+27846972497">Call</a><a href="https://wa.me/27846972497" target="_blank" rel="noopener">WhatsApp</a><a class="main" href="#contact">Get a quote</a></div>
+
+<dialog class="sheet" id="svc-influencer" aria-labelledby="t-influencer">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-influencer">Influencer marketing &amp; management</h2>
+  <p>We help brands leverage the power of influencer partnerships to increase visibility, build credibility and connect with relevant audiences.</p>
+  <ul><li>Influencer sourcing and identification</li><li>Influencer relationship management</li><li>Influencer campaign coordination</li><li>Brand collaborations and partnerships</li><li>Campaign briefing and deliverable coordination</li><li>Influencer marketing strategy</li><li>Campaign performance monitoring</li></ul>
+  <a class="btn" href="#contact" data-service="Influencer marketing &amp; management">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-digital" aria-labelledby="t-digital">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-digital">Digital marketing</h2>
+  <p>We develop digital marketing initiatives that help businesses strengthen their online presence, reach potential customers and communicate effectively with their target markets.</p>
+  <ul><li>Digital campaign coordination</li><li>Online brand awareness campaigns</li><li>Digital promotional strategies</li><li>Audience engagement initiatives</li><li>Online marketing communications</li><li>Digital brand positioning</li></ul>
+  <a class="btn" href="#contact" data-service="Digital marketing">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-social" aria-labelledby="t-social">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-social">Social media management</h2>
+  <p>We help businesses establish and maintain a consistent, engaging social media presence.</p>
+  <ul><li>Social media account management</li><li>Content planning and scheduling</li><li>Social media campaign coordination</li><li>Brand communication</li><li>Community and audience engagement</li><li>Social media growth initiatives</li></ul>
+  <a class="btn" href="#contact" data-service="Social media management">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-activations" aria-labelledby="t-activations">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-activations">Brand activations</h2>
+  <p>We create interactive brand experiences that bring products and services directly to consumers. Our activations focus on increasing brand visibility, encouraging participation and creating memorable consumer interactions.</p>
+  <ul><li>In-store activations</li><li>Outdoor activations</li><li>Product launches</li><li>Consumer engagement campaigns</li><li>Promotional games and competitions</li><li>Retail and nightlife activations</li></ul>
+  <a class="btn" href="#contact" data-service="Brand activations">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-experiential" aria-labelledby="t-experiential">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-experiential">Experiential marketing</h2>
+  <p>We create engaging marketing experiences that allow consumers to interact with brands in meaningful and memorable ways. Through creative concepts and immersive campaigns, we help brands establish stronger emotional connections with their audiences.</p>
+  
+  <a class="btn" href="#contact" data-service="Experiential marketing">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-sampling" aria-labelledby="t-sampling">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-sampling">Product sampling &amp; in-store promotions</h2>
+  <p>We help brands introduce products to consumers through interactive demonstrations, product sampling and retail promotional campaigns.</p>
+  
+  <a class="btn" href="#contact" data-service="Product sampling &amp; in-store promotions">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-flyers" aria-labelledby="t-flyers">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-flyers">Flyer distribution &amp; promotional campaigns</h2>
+  <p>We coordinate targeted promotional campaigns designed to increase awareness and reach consumers in high-traffic locations.</p>
+  
+  <a class="btn" href="#contact" data-service="Flyer distribution &amp; promotional campaigns">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-staffing" aria-labelledby="t-staffing">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-staffing">Promotional staffing &amp; brand ambassadors</h2>
+  <p>We provide professional and energetic promotional personnel to represent brands at events, activations and marketing campaigns.</p>
+  <ul><li>Brand ambassadors</li><li>Promotional representatives</li><li>Event hosts and hostesses</li><li>Bottle service hostesses</li><li>Promotional teams</li><li>Campaign staffing coordination</li></ul>
+  <a class="btn" href="#contact" data-service="Promotional staffing &amp; brand ambassadors">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-events" aria-labelledby="t-events">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-events">Event marketing &amp; management</h2>
+  <p>We support the planning, coordination and promotional execution of marketing events and brand experiences.</p>
+  <ul><li>Corporate event promotions</li><li>Product launches</li><li>Brand events</li><li>Event staffing</li><li>Promotional coordination</li><li>Entertainment and nightlife marketing</li></ul>
+  <a class="btn" href="#contact" data-service="Event marketing &amp; management">Enquire about this service</a>
+</dialog>
+<dialog class="sheet" id="svc-partnerships" aria-labelledby="t-partnerships">
+  <button type="button" class="x" data-close aria-label="Close"></button>
+  <h2 id="t-partnerships">Brand partnerships &amp; collaborations</h2>
+  <p>We facilitate strategic brand collaborations and promotional partnerships that create opportunities for businesses to expand their reach and connect with new audiences.</p>
+  
+  <a class="btn" href="#contact" data-service="Brand partnerships &amp; collaborations">Enquire about this service</a>
+</dialog>
+<dialog class="light-box" id="lightbox" aria-label="Photo"><button type="button" class="x" data-close aria-label="Close"></button><img alt=""><div class="lb-nav"><button type="button" data-step="-1">Previous</button><p></p><button type="button" data-step="1">Next</button></div></dialog>
+<script src="map-data.js" defer></script>
+<script src="main.js" defer></script>
 </body>
 </html>
