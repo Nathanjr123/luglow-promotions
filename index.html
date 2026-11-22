@@ -17,9 +17,8 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..900&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="preload" href="fonts/anybody.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -110,9 +109,11 @@
       <h2>Delivering brand experiences</h2>
       <p>Our previous brand activation experience includes:</p>
     </div>
-    <ul class="brands">
-      <li>Jägermeister</li><li>Castle Double Malt</li><li>Devil’s Peak</li>
-    </ul>
+    <div class="brands">
+      <figure><img src="img/jagermeister.webp" alt="Two promoters in green Jägermeister uniforms at a branded outdoor bar" loading="lazy"><figcaption>Jägermeister</figcaption></figure>
+      <figure><img src="img/castle-double-malt.webp" alt="A brand ambassador in a green dress holding a Castle Double Malt bucket beside a customer" loading="lazy"><figcaption>Castle Double Malt</figcaption></figure>
+      <figure><img src="img/devils-peak.webp" alt="A brand ambassador on a golf course holding a six-pack of Devil’s Peak Lite" loading="lazy"><figcaption>Devil’s Peak</figcaption></figure>
+    </div>
     <div class="exp">
       <ul>
         <li>Nightlife and club activations</li><li>Bottle service promotions</li><li>In-store product tastings</li><li>Outdoor promotional campaigns</li><li>Brand ambassador staffing</li><li>Consumer engagement initiatives</li>
@@ -157,15 +158,17 @@
       <h2>Our work. Our impact.</h2>
       <p>Our portfolio highlights the creativity, coordination and execution behind the campaigns we support.</p>
     </div>
-    <ul class="folio">
-      <li class="f1"><span>Marketing campaigns</span></li>
-      <li class="f2"><span>Influencer collaborations</span></li>
-      <li class="f3"><span>Promotional activations</span></li>
-      <li class="f4"><span>Brand experiences</span></li>
-    </ul>
-    <div class="actions">
-      <a class="btn ink" href="https://www.instagram.com/luglowpromotions/" target="_blank" rel="noopener">See our work on Instagram</a>
-      <a class="btn line-ink" href="#contact">Request our portfolio</a>
+    <div class="folio">
+      <figure><img src="img/vaseline-in-store.webp" alt="A smiling promoter in a Vaseline uniform beside a giant Vaseline jar display in a store" loading="lazy"><figcaption>Vaseline in-store promotion</figcaption></figure>
+      <figure><img src="img/street-team.webp" alt="Four promoters in matching branded T-shirts holding flyers at a city intersection" loading="lazy"><figcaption>Street promotion team</figcaption></figure>
+      <div class="folio-end">
+        <figure><img src="img/flyer-team.webp" alt="Four promoters holding stacks of retail deals flyers outside a shopping centre" loading="lazy"><figcaption>Flyer distribution team</figcaption></figure>
+        <p>Marketing campaigns, influencer collaborations, promotional activations and brand experiences. For partnership opportunities and campaign enquiries, contact our team.</p>
+        <div class="actions">
+          <a class="btn ink" href="https://www.instagram.com/luglowpromotions/" target="_blank" rel="noopener">More on Instagram</a>
+          <a class="btn line-ink" href="#contact">Request our portfolio</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
